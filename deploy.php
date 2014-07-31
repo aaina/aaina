@@ -40,8 +40,8 @@
 <pre>
  .  ____  .    ____________________________
  |/      \|   |                            |
-[| <span style="color: #FF0000;">&hearts;    &hearts;</span> |]  | Git Deployment Script v0.1 |
- |___==___|  /              &copy; oodavid 2012 |
+[| <span style="color: #FF0000;">&hearts;   &hearts;</span> |]  | Git Deployment Script v0.1 |
+ |___==___|   |              &copy; oodavid 2012 |
               |____________________________|
 
 <?php echo $output; ?>
