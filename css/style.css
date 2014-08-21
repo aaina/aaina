@@ -35,4 +35,15 @@ div.links {
     font-size: 16px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
+    color: black;
+}
+div.latest-work {
+
+}
+div.latest-work h3 {
+    font-family: "Proxima Nova Bold", Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #eee;
 }
