@@ -10,5 +10,9 @@ body {
     background: white;
 }
 div.main-container {
+    font-family: "Proxima Nova Reg", Helvetica, sans-serif;
+    padding-top: 100px 10%;
+}
+div.main-container h1 {
     font-family: "Proxima Nova Bold", Helvetica, sans-serif;
 }
