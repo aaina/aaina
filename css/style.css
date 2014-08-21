@@ -16,6 +16,7 @@ body {
 div.main-container {
     font-family: "Proxima Nova Reg", Helvetica, sans-serif;
     padding: 100px 10%;
+    color: #333;
 }
 div.main-container h1 {
     font-family: "Proxima Nova Bold", Helvetica, sans-serif;
@@ -80,4 +81,7 @@ div.footer p {
     font-size: 11px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
+}
+div.footer a {
+    color: #fc491f;
 }
