@@ -51,6 +51,8 @@ div.latest-work h3 {
     color: #bbb;
 }
 div.dribbble-panel {
+    display: block;
+    padding-bottom: 20px;
 }
 div.dribbble-panel img {
     max-width: 320px;
