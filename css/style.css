@@ -29,10 +29,12 @@ div.main-container p {
     font-size: 24px;
 }
 div.links {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 div.links a {
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-family: "Proxima Nova Bold", Helvetica, sans-serif;
     font-size: 16px;
     letter-spacing: 0.08em;
