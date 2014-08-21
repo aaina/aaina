@@ -1,10 +1,14 @@
 @font-face {
-    font-family: "Proxima Nova Bold";
-    src: url(/proxima-nova-bold.otf) format("opentype");
-}
-@font-face {
     font-family: "Proxima Nova Reg";
     src: url(/proxima-nova-reg.otf) format("opentype");
+}
+@font-face {
+    font-family: "Proxima Nova Light";
+    src: url(/proxima-nova-light.otf) format("opentype");
+}
+@font-face {
+    font-family: "Proxima Nova Bold";
+    src: url(/proxima-nova-bold.otf) format("opentype");
 }
 body {
     background: white;
@@ -21,5 +25,6 @@ div.main-container h1 {
     text-transform: uppercase;
 }
 div.main-container p {
-    font-size: 14px;
+    font-family: "Proxima Nova Light", Helvetica, sans-serif;
+    font-size: 24px;
 }
