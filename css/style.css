@@ -61,6 +61,10 @@ div.dribbble-panel img {
     max-width: 320px;
     border: 5px solid #efefef;
 }
+div.tumblr-show-me-more {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
 div.tumblr-show-me-more a {
     font-family: "Proxima Nova Bold", Helvetica, sans-serif;
     font-size: 11px;
