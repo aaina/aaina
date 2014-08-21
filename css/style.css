@@ -43,13 +43,15 @@ div.links a {
     text-transform: uppercase;
     color: black;
 }
-div.latest-work {
-
-}
 div.latest-work h3 {
     font-family: "Proxima Nova Bold", Helvetica, sans-serif;
     font-size: 13px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: #bbb;
+}
+div.dribbble-panel {
+    width: 320px;
+    height: 240px;
+    border: 4px solid #eee;
 }
