@@ -8,5 +8,7 @@
 }
 body {
     background: white;
+}
+div.main-container {
     font-family: "Proxima Nova Bold", Helvetica, sans-serif;
 }
