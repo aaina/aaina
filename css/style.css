@@ -32,9 +32,11 @@ div.links {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-div.links a {
+div.link-wrapper {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+div.links a {
     font-family: "Proxima Nova Bold", Helvetica, sans-serif;
     font-size: 16px;
     letter-spacing: 0.08em;
