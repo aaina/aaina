@@ -62,13 +62,18 @@ div.dribbble-panel img {
     border: 5px solid #efefef;
 }
 div.tumblr-show-me-more a {
-    font-size: 18px;
+    font-family: "Proxima Nova Bold", Helvetica, sans-serif;
+    font-size: 11px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: red;
+    color: #fc491f;
+}
+div.footer {
+    border-top: 1px solid #efefef;
 }
 div.footer p {
-    font-size: 18px;
+    font-family: "Proxima Nova Bold", Helvetica, sans-serif;
+    font-size: 11px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
 }
