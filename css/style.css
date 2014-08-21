@@ -16,7 +16,7 @@ body {
 div.main-container {
     font-family: "Proxima Nova Reg", Helvetica, sans-serif;
     padding: 100px 10%;
-    color: #666;
+    color: #444;
 }
 div.main-container h1 {
     font-family: "Proxima Nova Bold", Helvetica, sans-serif;
@@ -38,6 +38,7 @@ div.main-container p {
 }
 div.main-header a {
     text-decoration: underline;
+    color: #444;
 }
 div.links {
     padding-top: 30px;
