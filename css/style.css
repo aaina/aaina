@@ -38,6 +38,8 @@ div.main-container p {
 }
 div.main-content {
     max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
 }
 div.main-header a {
     text-decoration: underline;
@@ -66,7 +68,6 @@ div.dribbble-panel {
     padding-bottom: 20px;
 }
 div.dribbble-panel img {
-    max-width: 320px;
     border: 5px solid #efefef;
 }
 div.tumblr-show-me-more {
