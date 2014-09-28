@@ -2,6 +2,8 @@
 * Dribbble.js
 *
 * @author Tim Davies
+*
+* Modified by Chris Paul for Aaina Sharma. :)
 */
 
 /**
@@ -67,19 +69,22 @@ function parseShots (shots)
     {
         dribbble.allShots.sort(dribbble.order)
 
-        var htmlString = "\n<ul>\n"
+        var htmlString = ""; // "\n<ul>\n"
 
         for (var i = 0; i < dribbble.shotLimit; i++)
         {
             var shot = dribbble.allShots[i];
-            htmlString = htmlString+"\n<li class=\"dribbble_shot\">";
+            htmlString = htmlString+"\n<div class=\"dribbble-panel text-center small-12 medium-6 columns\">"; // "\n<li class=\"dribbble_shot\">";
             htmlString = htmlString+"<a href=\""+shot.url+"\">";
             htmlString = htmlString+"<img src=\""+shot.image_url+"\" alt=\""+shot.title+"\" />";
             htmlString = htmlString+"</a>";
-            htmlString = htmlString+"</li>\n";
+            htmlString = htmlString+"</div>\n"; // "</li>\n";
         }
 
-        htmlString = htmlString + "\n</ul>\n";
+        // htmlString = htmlString + "\n</ul>\n";
+        // Add the "Show me more"
+        htmlString = htmlString + "\n<div class=\"dribbble-panel text-center small-12 medium-6 columns\">" +
+              "<a href=\"https://dribbble.com/aaina\"><img src=\"/aaina/images/dribbble-show-me-more.png\" /></a>\n</div>";
 
         document.getElementById(dribbble.element).innerHTML = htmlString;
         dribbble.complete();
