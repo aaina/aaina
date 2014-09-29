@@ -108,6 +108,6 @@ function parseTumblrPosts(data) {
     var latest_post = data.response.posts[0];
     var latest_image = latest_post.photos[0];
     var htmlString = "\n<a href=\"" + latest_post.image_permalink + "\">";
-    htmlString = htmlString+"\n<img src=\"" + latest_image.original_size.url + "\" alt=\"" + latest_post.caption + "\" title=\"" + latest_post.caption + "\"/>";
-    document.getElementsById(tumblr_doc_id).innerHTML = htmlString;
+    htmlString = htmlString+"\n<img src=\"" + latest_image.original_size.url + "\" alt=\"" + latest_post.caption + "\" title=\"" + latest_post.caption + "\"/></a>";
+    document.getElementById(tumblr_doc_id).innerHTML = htmlString;
 }
