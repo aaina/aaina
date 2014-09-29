@@ -90,3 +90,16 @@ function parseShots (shots)
         dribbble.complete();
     }
 }
+
+function getTumblrImage() {
+    document.addEventListener('DOMContentLoaded', function () {
+        var url = 'http://api.tumblr.com/v2/blog/definitelyobsessed.tumblr.com/posts?limit=1&api_key=kb332nwk1ezBWgTuA5esDRL3YU6KIC8yyOaCeMdjIIS9LQVIQC&callback=parseTumblrPosts';
+        var myscript = document.createElement('script');
+        myscript.src = url;
+        document.body.appendChild(myscript);
+    });
+}
+
+function parseTumblrPosts(posts) {
+    console.log("posts: " + posts);
+}

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/vendor/modernizr.js"></script>
-    <script src="js/dribbble.js"></script>
+    <script src="js/aaina.js"></script>
   </head>
   <body>
 
@@ -61,8 +61,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="small-12 columns">
-            <img src="http://31.media.tumblr.com/6962f29bdce23d9894329b1f5c111fc5/tumblr_mvsuq3dpMn1rvxtnko1_1280.jpg" />
+          <div id="tumblr" class="small-12 columns">
           </div>
         </div>
         <div class="row">
@@ -83,7 +82,10 @@
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
-      getShotsForID(['aaina'], 'dribble-shots', 3);
+      $(function() {
+        getShotsForID(['aaina'], 'dribble-shots');
+        getTumblrImage();
+      })
     </script>
   </body>
 </html>
