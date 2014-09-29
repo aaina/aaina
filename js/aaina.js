@@ -91,15 +91,23 @@ function parseShots (shots)
     }
 }
 
-function getTumblrImage() {
+var tumblr_api_key = 'kb332nwk1ezBWgTuA5esDRL3YU6KIC8yyOaCeMdjIIS9LQVIQC';
+var tumblr_doc_id;
+
+function getLatestTumblrImage(username, id) {
+    tumblr_doc_id = id;
     document.addEventListener('DOMContentLoaded', function () {
-        var url = 'http://api.tumblr.com/v2/blog/definitelyobsessed.tumblr.com/posts?limit=1&api_key=kb332nwk1ezBWgTuA5esDRL3YU6KIC8yyOaCeMdjIIS9LQVIQC&callback=parseTumblrPosts';
+        var url = 'http://api.tumblr.com/v2/blog/definitelyobsessed.tumblr.com/posts?limit=1&api_key=' + tumblr_api_key + '&callback=parseTumblrPosts';
         var myscript = document.createElement('script');
         myscript.src = url;
         document.body.appendChild(myscript);
     });
 }
 
-function parseTumblrPosts(posts) {
-    console.log("posts: " + posts);
+function parseTumblrPosts(data) {
+    var latest_post = data.response.posts[0];
+    var latest_image = latest_post.photos[0];
+    var htmlString = "\n<a href=\"" + latest_post.image_permalink + "\">";
+    htmlString = htmlString+"\n<img src=\"" + latest_image.original_size.url + "\" alt=\"" + latest_post.caption + "\" title=\"" + latest_post.caption + "\"/>";
+    document.getElementsById(tumblr_doc_id).innerHTML = htmlString;
 }
